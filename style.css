@@ -1,0 +1,289 @@
+#indexBody {
+    background-image: url("./img/mujer-fuertota.avif");
+    background-size: cover;
+    background-color: black;
+
+}
+
+#div-inicio h2 {
+    text-decoration: dotted;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.logofooter {
+    width: auto;
+    height: 20px;
+}
+
+* {
+    color: white;
+}
+
+#misco {
+    color: brown;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 32px;
+}
+
+#div-inicio {
+    margin-left: 10%;
+}
+
+#zonaDerecha {
+    margin-left: auto;
+    margin-left: 80%;
+    transform: rotate(90deg);
+}
+
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+    margin-left: 32.5%;
+    margin-right: auto;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: calc(300px + 3em);
+}
+
+#localizaBody {
+    background-image: url("/img/señora-trx.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
+#ubiflex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    background-color: rgba(26, 26, 26, 0.5);
+}
+
+#ContactoBody {
+    background-image: url("./img/hombre-mamado-derecha.jpg");
+    background-size: cover;
+    background-color: black;
+
+}
+
+
+@media (max-width: 600px) {
+    .slide-inner {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: calc(300px + 3em);
+    }
+
+    .slide {
+        position: relative;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+        margin-top: 26px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    body {
+        background-color: #1A1A1A;
+
+    }
+
+    
+
+    #zonaDerecha {
+        margin-left: auto;
+        margin-left: 10%;
+        transform: rotate(0);
+    }
+
+}
+
+#horariobody {
+    background-image: url("/img/suelo-gimnasio.avif");
+    background-size: cover;
+    background-color: black;
+}
+
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#divtarifas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarifas1 {
+    text-align: center;
+
+}
+
+.card{
+    background-color: grey;
+}
+
+#horarios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.tarifas12 {
+    text-align: center;
+    background-color: #1A1A1A;
+    padding: 10px;
+}
+#tarifa1 {
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 10px solid brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card{
+    margin: 10px;
+}
+
+.miscos {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+#tarifa2 {
+    background-color: brown;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#tarifabody {
+    background-color: #1A1A1A;
+}
+
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+
+
+
+
+
+
+footer {
+    background-color: #1A1A1A;
+    height: 50%;
+    color: white;
+
+}
+
+.main1 {
+    display: flex;
+    margin: 0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
